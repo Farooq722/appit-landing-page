@@ -4,15 +4,15 @@ export const Badge = () => {
 
     const pictures = [
         {
-            images: "https://github.com/shadcn.png",
+            images: "./person2.jpeg",
             alt: "img",
         },
         {
-            images: "https://github.com/leerob.png",
+            images: "./person1.png",
             alt: "img",
         },
         {
-            images: "https://github.com/evilrabbit.png",
+            images: "./person3.png",
             alt: "img",
         },
     ]
@@ -29,7 +29,7 @@ export const Badge = () => {
             >
                 {
                     pictures.map((item, idx) => (
-                        <img src={item.images} key={idx} alt={item.alt} width={27} height={27} className="rounded-full -ml-3.5" />
+                        <img src={item.images} key={idx} alt={item.alt} width={27} height={27} className="rounded-full -ml-3 " />
                     ))
                 }
                 <p className="font-semibold text-base text-neutral-400 leading-tight">Join 3 million other users on waitlist</p>

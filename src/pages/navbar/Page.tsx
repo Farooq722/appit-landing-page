@@ -37,7 +37,7 @@ export const Navbar = () => {
             }}
         >
             <div className="flex justify-between items-center">
-                <motion.div className="flex justify-center items-center font-extrabold -space-x-1.5 cursor-pointer"
+                <motion.div className="flex justify-center items-center font-extrabold  cursor-pointer"
                     initial={{ opacity: 1, y: 8 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3, duration: 0.4, ease: "easeOut" }}

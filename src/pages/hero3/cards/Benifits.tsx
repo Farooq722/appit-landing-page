@@ -55,7 +55,7 @@ export const Benifits = () => {
                 <p className="max-w-md text-center text-sm font-medium text-gray-500">Unlock a world of  meaningfull connections, tailored experiences, and seamless social interaction.</p>
             </div>
 
-            <div className="flex justify-center items-center gap-x-8">
+            <div className="flex justify-center items-center gap-x-7">
                 <div className="flex flex-col w-1/3 justify-around">
                     {leftCard.map((item, index) => (
                         <Cards
