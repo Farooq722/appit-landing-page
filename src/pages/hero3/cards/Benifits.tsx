@@ -36,30 +36,28 @@ export const Benifits = () => {
 
     return (
         <div className="mx-auto max-w-7xl mt-20 px-4 text-white">
-            <motion.div
+            <div
                 className="flex justify-center items-center gap-2 border border-gray-700 max-w-fit mx-auto py-2 px-4 rounded-full"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                    delay: 0.7,
-                    duration: 0.7,
-                    ease: "easeOut",
-                }}
             >
                 <TiStarOutline size={27} />
                 <p className="text-lg font-semibold">Our Benefits</p>
-            </motion.div>
+            </div>
 
-            <div className="flex flex-col justify-center items-center mt-10 space-y-3 mb-20 text-center">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium leading-tight text-neutral-100">
+            <div className="flex flex-col justify-center items-center mt-10 space-y-3 mb-20 text-center"
+
+            >
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium leading-tight text-neutral-100"
+                >
                     Discover Appit's Benefits
                 </h1>
-                <p className="max-w-md text-sm font-medium text-gray-500">
+                <p className="max-w-md text-sm font-medium text-gray-500"
+                >
                     Unlock a world of meaningful connections, tailored experiences, and seamless social interaction.
                 </p>
             </div>
 
-            <div className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-x-7">
+            <div className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-x-7"
+            >
                 <div className="flex flex-col w-full sm:w-3/4 lg:w-1/3 gap-6">
                     {leftCard.map((item, index) => (
                         <Cards
@@ -71,13 +69,23 @@ export const Benifits = () => {
                     ))}
                 </div>
 
-                <img
+                <motion.img
                     src="./image2.png"
                     alt="mobile image"
                     className="w-2/3 sm:w-1/2 lg:w-1/3 max-w-sm object-contain"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        delay: 0.7,
+                        duration: 0.7,
+                        ease: "easeOut",
+                    }}
                 />
 
-                <div className="flex flex-col w-full sm:w-3/4 lg:w-1/3 gap-6">
+                <div className="flex flex-col w-full sm:w-3/4 lg:w-1/3 gap-6 "
+
+                >
                     {rightCard.map((item, index) => (
                         <Cards
                             icon={item.icons}

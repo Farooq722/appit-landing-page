@@ -24,6 +24,7 @@ export const MovingCard = () => {
                     className="text-lg sm:text-xl md:text-2xl font-medium leading-tight text-white text-center"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
                     transition={{
                         delay: 0.4,
                         duration: 0.7,
